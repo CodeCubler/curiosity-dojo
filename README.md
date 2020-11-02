@@ -1,4 +1,4 @@
-# Galgenmännchen (test commit robert)
+# Galgenmännchen
 **1. DOJO**<br>
 In einem (Coding)-Dojo werden gemeinschaftlich Programmierübungen testgetrieben bearbeitet. <br>
 Dabei steht jedem Teilnehmer nacheinander ein Zeitfenster (Timebox) von 5 Minuten zur Verfügung. <br>
