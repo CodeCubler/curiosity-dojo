@@ -38,3 +38,7 @@ Dabei haben die Zahlen folgende Zuordnung: <br>
 "Es handelt sich um eine additive Zahlschrift, mit ergänzender Regel für die subtraktive Schreibung bestimmter Zahlen, aber ohne Stellenwertsystem und ohne Zeichen für Null." [https://de.wikipedia.org/wiki/R%C3%B6mische_Zahlschrift , 30.10.20] <br>
 
 D.h. Zeichen, die kleiner sind als das vorherige werden addiert (XI => X + I => 10 + 1 = 11) und von Zeichen, die größer sind als das vorherige, wird das vorherige abgezogen (XL => L - X => 50 - 10 = 40). <br>
+
+Quellen: <br>
+https://ccd-school.de/coding-dojo/function-katas/from-roman-numerals/ <br>
+https://ccd-school.de/coding-dojo/function-katas/to-roman-numerals/ <br>
