@@ -1,5 +1,4 @@
-# curiosity-kotlin-dojo
-
+# Galgenmännchen
 **1. DOJO**<br>
 In einem (Coding)-Dojo werden gemeinschaftlich Programmierübungen testgetrieben bearbeitet. <br>
 Dabei steht jedem Teilnehmer nacheinander ein Zeitfenster (Timebox) von 5 Minuten zur Verfügung. <br>
@@ -30,4 +29,5 @@ Dabei wird ein Buchstabe übergeben und der bisher erratende Stand zurückgegebe
 Sprich, bei dem Wort "Programm" wurde der Buchstabe "o" erraten, die Methode liefert "--o-----" zurück. <br>
 Beim nächsten mal wird "r" erraten - es wird "-ro-r---" zurückgegeben usw. bis das Wort komplett erraten wurde. <br>
 
- 
+Quelle: <br>
+https://ccd-school.de/coding-dojo/class-katas/galgenmaennchen/ <br>
