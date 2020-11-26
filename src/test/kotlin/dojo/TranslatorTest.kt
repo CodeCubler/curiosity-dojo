@@ -1,7 +1,10 @@
-package dojo;
+package dojo
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test
 
-class TranslatorTest {
-  
+import org.junit.jupiter.api.Assertions.*
+
+internal class TranslatorTest {
+
+
 }
