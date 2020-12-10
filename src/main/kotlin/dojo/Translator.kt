@@ -18,12 +18,21 @@ class Translator {
         var decimal = decimalNumber
         var result = ""
 
+        while (decimal >= RomanNumerals.X.value){
+            result += RomanNumerals.X
+            decimal -= RomanNumerals.X.value
+        }
+
+        if (decimal == 9){
+            result += "${RomanNumerals.I}${RomanNumerals.X}"
+            decimal-=9
+        }
         while(decimal >= RomanNumerals.V.value){
             result += RomanNumerals.V
             decimal -= RomanNumerals.V.value
         }
 
-        while(decimal >= 4){
+        if(decimal == 4){
             result += "${RomanNumerals.I}${RomanNumerals.V}"
             decimal -= 4
         }
