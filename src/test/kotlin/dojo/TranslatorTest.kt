@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.CsvSource
 
 internal class TranslatorTest {
 
-    @ParameterizedTest
+    @ParameterizedTest(name = "{index} => decimalNumber ''{0}'' to romanNumeral ''{1}''")
     @CsvSource(value = [
         "1,I",
         "2, II",
