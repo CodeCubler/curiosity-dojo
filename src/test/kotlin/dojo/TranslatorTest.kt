@@ -8,7 +8,6 @@ internal class TranslatorTest {
 
     @ParameterizedTest
     @CsvSource(value = [
-        "4711,MMMMDCCXI",
         "1,I",
         "2, II",
         "3, III",
