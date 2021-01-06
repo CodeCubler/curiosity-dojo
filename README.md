@@ -29,3 +29,12 @@ Das Plugin taucht dann in IntelliJ oben rechts auf. <br>
 Klickt man dort drauf kann man die Option "Join another IDE as participant" auswählen. <br>
 Vom Organisator wird ein Einladungs-Link zur Verfügung gestellt, der dort eingegeben werden muss. <br>
 Beim erfolgreichen Verbinden öffnet sich daraufhin ein neues (reduziertes) IDE-Fenster in dem nun mit anderen Teilnehmer gleichzeitig gearbeitet werden kann. <br>
+
+**3. Aufgabe** <br>
+Entwickle eine Funktion, welche die Anzahl der in einem String vorkommenden Zeichen zählt. <br>
+Der String „Das darf nicht sein“ liefert folgendes Ergebnis:
+
+D:1, a:2, s:2, _:3, d:1, r:1, f:1, n:2, i:2, c:1, h:1, e:1, t:1 <br>
+(Das Zeichen "\_" steht für ein Leerzeichen.)
+
+Quelle: https://ccd-school.de/coding-dojo/function-katas/zeichen-zaehlen/
