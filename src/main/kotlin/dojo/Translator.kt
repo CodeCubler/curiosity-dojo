@@ -1,5 +1,7 @@
 package dojo
 
+import java.util.*
+
 /**
  * 1    ->  I
  * 5    ->  V
@@ -11,50 +13,40 @@ package dojo
  */
 class Translator {
 
+    private var romanTokenMap: TreeMap<Int, String>
+
+    init {
+        romanTokenMap = TreeMap()
+
+        romanTokenMap[1000] = "M"
+        romanTokenMap[900] = "CM"
+        romanTokenMap[500] = "D"
+        romanTokenMap[400] = "CD"
+        romanTokenMap[100] = "C"
+        romanTokenMap[90] = "XC"
+        romanTokenMap[50] = "L"
+        romanTokenMap[40] = "XL"
+        romanTokenMap[10] = "X"
+        romanTokenMap[9] = "IX"
+        romanTokenMap[5] = "V"
+        romanTokenMap[4] = "IV"
+        romanTokenMap[1] = "I"
+    }
+
+
     /**
      * Übersetzt eine Dezimalzahl in römische Ziffern.
      */
     fun decimalToRomanNumerals(decimalNumber: Int): String {
-        var decimal = decimalNumber
-        var result = ""
 
-        while (decimal >= RomanNumerals.X.value){
-            result += RomanNumerals.X
-            decimal -= RomanNumerals.X.value
+        val pointer = romanTokenMap.floorKey(decimalNumber)
+
+        if(decimalNumber == pointer){
+            return romanTokenMap[pointer]!!
+        }else{
+            return romanTokenMap[pointer] + decimalToRomanNumerals(decimalNumber - pointer)
         }
 
-        if (decimal == 9){
-            result += "${RomanNumerals.I}${RomanNumerals.X}"
-            decimal-=9
-        }
-        while(decimal >= RomanNumerals.V.value){
-            result += RomanNumerals.V
-            decimal -= RomanNumerals.V.value
-        }
-
-        if(decimal == 4){
-            result += "${RomanNumerals.I}${RomanNumerals.V}"
-            decimal -= 4
-        }
-
-        while(decimal >= RomanNumerals.I.value){
-            result += RomanNumerals.I
-            decimal -= RomanNumerals.I.value
-        }
-
-        return result
-
-//        if(decimalNumber<RomanNumerals.V.value){
-//            if (decimalNumber<4){
-//                var result = ""
-//                for (index in 0 until  decimalNumber)
-//                    result+=RomanNumerals.I
-//                return result
-//            } else{
-//                return "${RomanNumerals.I}${RomanNumerals.V}"
-//            }
-//        }
-//        return "MMMMDCCXI"
     }
 
     /**
